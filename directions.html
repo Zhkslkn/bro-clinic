@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Bro-clinic
+    </title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="language" content="Russian">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+    <main id="app" class="layout">
+        <header class="header">
+            <div class="header-top">
+                <div class="layout-container">
+                    <a href="index.html" class="header-logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+
+                    <a href="mailto:info@bro-clinic.kz" class="header-mail"
+                        style="margin-left: 20px; margin-right: 20px;">
+                        <img src="img/icons/email-gray.svg" alt="email icon">
+                        info@bro-clinic.kz
+                    </a>
+
+                    
+
+                </div>
+            </div>
+            <div class="header-bot">
+                <div class="layout-container">
+                    <div class="header-dropdown-wrp">
+                        <span class="header-link">
+                            Услуги
+                            <img src="img/icons/select-arrow.svg" alt="arrow">
+                        </span>
+                        <div class="header-dropdown">
+                            <a href="directions.html">Направления</a>
+                            <a href="programs.html">Программы для женщин и детей</a>
+                            <a href="check-up.html">Check-up программы</a>
+                            <a href="corporate-service.html">Корпоративное обслуживание</a>
+                        </div>
+                    </div>
+                    <a href="prices.html" class="header-link">Прейскурант</a>
+                    <a href="team.html" class="header-link">Наша команда</a>
+                    <a href="about.html" class="header-link">О медцентре</a>
+                    <a href="#" class="header-link">Новости</a>
+                    <a href="contacts.html" class="header-link">Контакты</a>
+                    
+                    <form class="header-search-wrp" action="">
+                        <img src="img/icons/search.svg" alt="search icon">
+                        <input type="text" placeholder="Поиск по сайту" name="q" minlength="3" required>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <header class="mob-header">
+            <a href="#" class="mob-header-logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <button class="mob-header-search">
+                <img src="img/icons/search.svg" alt="icon">
+            </button>
+            <button class="mob-header-burger">
+                <img src="img/icons/burger.svg" alt="burger">
+            </button>
+        </header>
+        <div class="mobile-menu">
+            <div class="mobile-menu-row -top">
+
+                <div class="mobile-menu-spacer"></div>
+                <button class="mobile-menu-close">
+                    <img src="img/icons/close.svg" alt="close icon">
+                </button>
+            </div>
+
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-dropdown">
+                    <div class="mobile-menu-row mobile-menu-dropdown-header">
+                        <p class="mobile-menu-text">Услуги</p>
+                        <div class="mobile-menu-spacer"></div>
+                        <img src="img/icons/select-arrow.svg" alt="arrow" class="mobile-menu-arrow">
+                    </div>
+                    <div class="mobile-menu-dropdown-content">
+                        <a href="directions.html" class="mobile-menu-link">
+                            <p class="mobile-menu-text -sm">Направления</p>
+                        </a>
+                        <a href="programs.html" class="mobile-menu-link">
+                            <p class="mobile-menu-text -sm">Программы для женщин и детей</p>
+                        </a>
+                        <a href="check-up.html" class="mobile-menu-link">
+                            <p class="mobile-menu-text -sm">Check-up программы</p>
+                        </a>
+                        <a href="corporate-service.html" class="mobile-menu-link">
+                            <p class="mobile-menu-text -sm">Корпоративное обслуживание</p>
+                        </a>
+                    </div>
+                </div>
+                <a href="prices.html" class="mobile-menu-text -mb">Прейскурант</a>
+                <a href="team.html" class="mobile-menu-text -mb">Наша команда</a>
+                <a href="about.html" class="mobile-menu-text -mb">О медцентре</a>
+                <a href="#" class="mobile-menu-text -mb">Новости</a>
+                <a href="contacts.html" class="mobile-menu-text -mb">Контакты</a>
+                <p class="button" style="cursor:pointer;"
+                    onclick="document.querySelector('.callback-review-btn').click(); document.querySelector('.mobile-menu-close').click();">
+                    Оставить отзыв</p>
+            </div>
+            <div class="mobile-menu-footer">
+
+                <button class="button"
+                    onclick="document.querySelector('.header-callback-btn').click(); document.querySelector('.mobile-menu-close').click();">Записаться
+                    на прием</button>
+
+                <div class="mobile-menu-phone-wrp">
+
+                    <img src="img/icons/email-gray.svg" alt="email icon" class="mobile-menu-email-icon">
+                    <a href="mailto:info@bro-clinic.kz" class="mobile-menu-text -xs -gray">info@bro-clinic.kz</a>
+                </div>
+                <div class="mobile-menu-socials">
+                    <a href="https://www.facebook.com/" class="mobile-menu-social">
+                        <img src="img/icons/fb-circle.svg" alt="icon">
+                    </a>
+                    <a href="https://www.instagram.com/" class="mobile-menu-social">
+                        <img src="img/icons/insta-circle.svg" alt="icon">
+                    </a>
+                    <a href="directions.html#" class="mobile-menu-social">
+                        <img src="img/icons/wp-circle.svg" alt="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal callback-modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-inner">
+                <button class="modal-close">
+                    <img src="img/icons/close.svg" alt="icon">
+                </button>
+                <app-form
+                    :data="{&quot;title&quot;:&quot;\u0417\u0430\u043f\u0438\u0441\u0430\u0442\u044c\u0441\u044f \u043d\u0430 \u043a\u043e\u043d\u0441\u0443\u043b\u044c\u0442\u0430\u0446\u0438\u044e&quot;,&quot;form_description&quot;:&quot;\u041d\u0430\u0436\u0438\u043c\u0430\u044f \u043d\u0430 \u043a\u043d\u043e\u043f\u043a\u0443 \u00ab\u0417\u0430\u043f\u0438\u0441\u0430\u0442\u044c\u0441\u044f\u00bb, \u0432\u044b \u0434\u0430\u0435\u0442\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0438\u0435 \u043d\u0430 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0443 \u0441\u0432\u043e\u0438\u0445 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445&quot;,&quot;name_placeholder&quot;:&quot;\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u0432\u043e\u0435 \u0438\u043c\u044f&quot;,&quot;phone_placeholder&quot;:&quot;\u041d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430&quot;,&quot;directions_placeholder&quot;:&quot;\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435&quot;,&quot;date_placeholder&quot;:&quot;\u0414\u0430\u0442\u0430 \u043f\u0440\u0438\u0435\u043c\u0430&quot;}"
+                    :directions="[{&quot;id&quot;:3,&quot;name&quot;:&quot;\u041d\u0430\u0431\u043b\u044e\u0434\u0435\u043d\u0438\u0435 \u0443\u0447\u0430\u0441\u0442\u043a\u043e\u0432\u043e\u0433\u043e \u0441\u0435\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0432\u0440\u0430\u0447\u0430 \u0438 \u043f\u0435\u0434\u0438\u0430\u0442\u0440\u0430&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;\u041d\u0430\u0431\u043b\u044e\u0434\u0435\u043d\u0438\u0435 \u0431\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0441\u0442\u0438&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;\u041e\u043f\u0435\u0440\u0430\u0446\u0438\u0438 \u0432 \u0440\u0430\u043c\u043a\u0430\u0445 \u041e\u0421\u041c\u0421 \u0438 \u0413\u041e\u0411\u041c\u041f&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;\u041b\u0435\u043a\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0435 \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u0435 \u0436\u0438\u0437\u043d\u0435\u043d\u043d\u043e \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u044b\u043c\u0438 \u043f\u0440\u0435\u043f\u0430\u0440\u0430\u0442\u0430\u043c\u0438&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;\u041f\u0440\u043e\u0444\u0438\u043b\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u043f\u0440\u0438\u0432\u0438\u0432\u043a\u0438&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;\u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u0438\u0435 \u043e\u0441\u043c\u043e\u0442\u0440\u044b(\u0441\u043a\u0440\u0438\u043d\u0438\u043d\u0433\u0438)&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;\u0410\u043a\u0443\u0448\u0435\u0440\u0441\u0442\u0432\u043e \u0438 \u0433\u0438\u043d\u0435\u043a\u043e\u043b\u043e\u0433\u0438\u044f&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;\u0426\u0435\u043d\u0442\u0440 \u0434\u0435\u0442\u0441\u043a\u043e\u0433\u043e \u0437\u0434\u043e\u0440\u043e\u0432\u044c\u044f&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;\u0426\u0435\u043d\u0442\u0440 \u0441\u0435\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0437\u0434\u043e\u0440\u043e\u0432\u044c\u044f&quot;},{&quot;id&quot;:13,&quot;name&quot;:&quot;\u0414\u0435\u0440\u043c\u0430\u0442\u043e\u043b\u043e\u0433\u0438\u044f&quot;},{&quot;id&quot;:14,&quot;name&quot;:&quot;\u042d\u043d\u0434\u043e\u043a\u0440\u0438\u043d\u043e\u043b\u043e\u0433\u0438\u044f&quot;},{&quot;id&quot;:15,&quot;name&quot;:&quot;\u042d\u043d\u0434\u043e\u0441\u043a\u043e\u043f\u0438\u044f&quot;},{&quot;id&quot;:16,&quot;name&quot;:&quot;\u041a\u043e\u0440\u043f\u043e\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0435 \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0435 \u043e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u0435&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;\u041a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u043d\u0430\u044f \u0442\u043e\u043c\u043e\u0433\u0440\u0430\u0444\u0438\u044f&quot;},{&quot;id&quot;:19,&quot;name&quot;:&quot;\u041c\u0430\u0433\u043d\u0438\u0442\u043d\u043e-\u0440\u0435\u0437\u043e\u043d\u0430\u043d\u0441\u043d\u0430\u044f \u0442\u043e\u043c\u043e\u0433\u0440\u0430\u0444\u0438\u044f&quot;},{&quot;id&quot;:20,&quot;name&quot;:&quot;\u041d\u0435\u0432\u0440\u043e\u043f\u0430\u0442\u043e\u043b\u043e\u0433\u0438\u044f&quot;},{&quot;id&quot;:21,&quot;name&quot;:&quot;\u041d\u0435\u0439\u0440\u043e\u0445\u0438\u0440\u0443\u0440\u0433\u0438\u044f&quot;},{&quot;id&quot;:22,&quot;name&quot;:&quot;\u041e\u0444\u0442\u0430\u043b\u044c\u043c\u043e\u043b\u043e\u0433\u0438\u044f&quot;},{&quot;id&quot;:23,&quot;name&quot;:&quot;\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0434\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0438&quot;},{&quot;id&quot;:24,&quot;name&quot;:&quot;\u0424\u0438\u0437\u0438\u043e\u0442\u0435\u0440\u0430\u043f\u0438\u044f&quot;},{&quot;id&quot;:25,&quot;name&quot;:&quot;\u0416\u0435\u043d\u0441\u043a\u0430\u044f \u043a\u043e\u043d\u0441\u0443\u043b\u044c\u0442\u0430\u0446\u0438\u044f&quot;},{&quot;id&quot;:26,&quot;name&quot;:&quot;\u0425\u0438\u0440\u0443\u0440\u0433\u0438\u044f&quot;},{&quot;id&quot;:27,&quot;name&quot;:&quot;\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u0438\u044f&quot;},{&quot;id&quot;:28,&quot;name&quot;:&quot;\u041c\u0430\u043c\u043c\u043e\u043b\u043e\u0433\u0438\u044f&quot;},{&quot;id&quot;:29,&quot;name&quot;:&quot;\u041e\u0442\u043e\u043b\u0430\u0440\u0438\u043d\u0433\u043e\u043b\u043e\u0433\u0438\u044f&quot;},{&quot;id&quot;:30,&quot;name&quot;:&quot;\u041f\u0435\u0434\u0438\u0430\u0442\u0440\u0438\u044f&quot;},{&quot;id&quot;:31,&quot;name&quot;:&quot;\u041f\u0420\u0410\u0412\u0418\u041b\u0410 \u041f\u0420\u0415\u0414\u041e\u0421\u0422\u0410\u0412\u041b\u0415\u041d\u0418\u042f \u0423\u0421\u041b\u0423\u0413&quot;},{&quot;id&quot;:32,&quot;name&quot;:&quot;\u0420\u0435\u043d\u0442\u0433\u0435\u043d&quot;},{&quot;id&quot;:33,&quot;name&quot;:&quot;\u0420\u043e\u0434\u0438\u043b\u044c\u043d\u043e\u0435 \u043e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435&quot;},{&quot;id&quot;:34,&quot;name&quot;:&quot;\u0421\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435&quot;},{&quot;id&quot;:35,&quot;name&quot;:&quot;\u0422\u0435\u0440\u0430\u043f\u0435\u0432\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043f\u0440\u043e\u0444\u0438\u043b\u044c&quot;},{&quot;id&quot;:36,&quot;name&quot;:&quot;\u0422\u0440\u0430\u0432\u043c\u0430\u0442\u043e\u043b\u043e\u0433\u0438\u044f \u0438 \u043e\u0440\u0442\u043e\u043f\u0435\u0434\u0438\u044f&quot;},{&quot;id&quot;:37,&quot;name&quot;:&quot;\u0422\u0440\u0435\u043d\u0430\u0436\u0435\u0440\u043d\u044b\u0439 \u0437\u0430\u043b&quot;},{&quot;id&quot;:38,&quot;name&quot;:&quot;\u0423\u0440\u043e\u043b\u043e\u0433\u0438\u044f&quot;},{&quot;id&quot;:39,&quot;name&quot;:&quot;\u0423\u043b\u044c\u0442\u0440\u0430\u0437\u0432\u0443\u043a\u043e\u0432\u0430\u044f \u0434\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430&quot;},{&quot;id&quot;:41,&quot;name&quot;:&quot;\u041d\u0435\u0432\u0440\u043e\u043b\u043e\u0433\u0438\u044f&quot;},{&quot;id&quot;:44,&quot;name&quot;:&quot;\u041e\u0431\u0449\u0430\u044f \u0445\u0438\u0440\u0443\u0440\u0433\u0438\u044f&quot;},{&quot;id&quot;:45,&quot;name&quot;:&quot;\u0414\u0435\u0442\u0441\u043a\u0430\u044f \u0445\u0438\u0440\u0443\u0440\u0433\u0438\u044f&quot;},{&quot;id&quot;:46,&quot;name&quot;:&quot;\u0410\u043d\u0433\u0438\u043e \u0445\u0438\u0440\u0443\u0440\u0433\u0438\u044f&quot;},{&quot;id&quot;:47,&quot;name&quot;:&quot;\u041e\u043f\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u0430\u044f \u0433\u0438\u043d\u0435\u043a\u043e\u043b\u043e\u0433\u0438\u044f&quot;},{&quot;id&quot;:48,&quot;name&quot;:&quot;\u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u0430\u044f \u0440\u0435\u0430\u0431\u0438\u043b\u0438\u0442\u0430\u0446\u0438\u044f&quot;},{&quot;id&quot;:49,&quot;name&quot;:&quot;\u0420\u0435\u043d\u0442\u0433\u0435\u043d \u043a\u0430\u0431\u0438\u043d\u0435\u0442&quot;},{&quot;id&quot;:50,&quot;name&quot;:&quot;\u041c\u0430\u043c\u043c\u043e\u043b\u043e\u0433\u0438\u044f&quot;},{&quot;id&quot;:51,&quot;name&quot;:&quot;\u041b\u041e\u0420 \u041a\u0430\u0431\u0438\u043d\u0435\u0442&quot;},{&quot;id&quot;:52,&quot;name&quot;:&quot;\u0423\u0440\u043e\u043b\u043e\u0433\u0438\u044f&quot;},{&quot;id&quot;:53,&quot;name&quot;:&quot;\u0424\u0438\u0437\u0438\u043e\u043b\u0435\u0447\u0435\u043d\u0438\u0435&quot;},{&quot;id&quot;:54,&quot;name&quot;:&quot;\u0420\u0435\u0430\u0431\u0438\u043b\u0438\u0442\u0430\u0446\u0438\u044f&quot;},{&quot;id&quot;:55,&quot;name&quot;:&quot;\u041a\u0430\u0440\u0434\u0438\u043e\u043b\u043e\u0433\u0438\u044f&quot;}]"
+                    :addresses="{&quot;1&quot;:&quot;\u041a\u0435\u0440\u0443\u0435\u043d-Medicus \u043d\u0430 \u0411\u0443\u0445\u0430\u0440 \u0416\u044b\u0440\u0430\u0443&quot;}"
+                    :address="1">
+                </app-form>
+            </div>
+        </div>
+        <div class="modal review-modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-inner">
+                <button class="modal-close" id="review-btn-cls"><img src="img/icons/close.svg" alt="icon"></button>
+                <form class="callback-form">
+                    <div>
+                        <h5 class="callback-form-title">Оставить отзыв</h5>
+                        <label class="input-wrp"><input type="text" name="reviewpatient" required="required"
+                                class="input" id="reviewName"> <span class="input-label">Введите свое имя</span></label>
+                        <label class="input-wrp"><input type="tel" name="reviewPhone" required="required"
+                                class="input phone-mask" id="reviewPhone"> <span class="input-label">Введите номер
+                                телефона</span></label>
+                        <label class="input-wrp">
+                            <textarea name="phone" required="required" class="input" placeholder="Введите отзыв"
+                                id="reviewDescr"></textarea>
+                        </label>
+
+                        <a href="directions.html#" onclick="checkReviewForm();return false;" class="button">Оставить
+                            отзыв</a>
+                        <p class="callback-form-text">Нажимая на кнопку «Оставить отзыв», вы даете согласие на обработку
+                            своих персональных данных</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        </script>
+        <div class="modal callback-success-modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-inner">
+                <button class="modal-close">
+                    <img src="img/icons/close.svg" alt="icon">
+                </button>
+                <h3 class="modal-title">Ваша заявка принята!</h3>
+                <h3 class="modal-title">Спасибо!</h3>
+                <p class="modal-text">Ваша заявка получена, мы свяжемся с Вами в ближайшее время!</p>
+                <p class="modal-text">Мы гарантируем сохранность Ваших личных данных</p>
+                <button class="modal-btn">Закрыть</button>
+            </div>
+        </div>
+        <div class="modal search-modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-inner">
+                <div class="modal-header">
+                    <form class="search-input" action="">
+                        <input type="text" placeholder="Поиск по сайту" name="q" minlength="3" required>
+                    </form>
+                    <button class="search-modal-cancel">Отмена</button>
+                </div>
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="layout-content">
+            <div class="directions layout-container">
+                <div class="breadcrumbs -mb">
+                    <a href="#" class="breadcrumbs-link">Главная</a>
+                    <img src="img/icons/select-arrow.svg" alt="arrow" class="breadcrumbs-arrow">
+                    <span class="breadcrumbs-link">Направления</span>
+                </div>
+                <h1 class="section-title">Направления</h1>
+                <div class="directions-tabs">
+                    <div class="directions-row">
+                        <nav class="directions-nav">
+                            <button data-index="1" class="directions-btn -active">Поликлиника</button>
+                            <button data-index="2" class="directions-btn ">Стационар</button>
+                            <button data-index="3" class="directions-btn ">Диагностика</button>
+                        </nav>
+                    </div>
+
+                    <div data-index="1" class="directions-tab" style="display: block">
+                        <div class="grid">
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/35/image/6156c2b92106b.svg"
+                                        alt="Терапевтический профиль">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Терапевтический профиль</p>
+                            </a>
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/25/image/6156cb10735d3.svg"
+                                        alt="Женская консультация">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Женская консультация</p>
+                            </a>
+                            <a 
+                                class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/10/image/6156c3af6b921.svg"
+                                        alt="Акушерство и гинекология">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Акушерство и гинекология</p>
+                            </a>
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/11/image/6156caf5d3694.svg"
+                                        alt="Центр детского здоровья">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Центр детского здоровья</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/30/image/6156c3fc5da25.svg" alt="Педиатрия">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Педиатрия</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/22/image/6156c456de0d9.svg" alt="Офтальмология">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Офтальмология</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/29/image/6156c493de732.svg" alt="Отоларингология">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Отоларингология</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/13/image/6156c4c55a162.svg" alt="Дерматология">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Дерматология</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/14/image/6156c5057bde0.png" alt="Эндокринология">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Эндокринология</p>
+                            </a>
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/26/image/6156c5378cf8e.svg" alt="Хирургия">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Хирургия</p>
+                            </a>
+                            <a
+                                class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/36/image/6156c56924a79.svg"
+                                        alt="Травматология и ортопедия">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника Стационар </h5>
+                                <p class="services-slider-name">Травматология и ортопедия</p>
+                            </a>
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/28/image/6156c59365ab1.svg" alt="Маммология">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника Стационар </h5>
+                                <p class="services-slider-name">Маммология</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/38/image/6156c5aee71e3.svg" alt="Урология">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Урология</p>
+                            </a>
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/24/image/6156cb1d38790.svg" alt="Физиотерапия">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Физиотерапия</p>
+                            </a>
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/37/image/6156c68abf7ca.svg" alt="Тренажерный зал">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Тренажерный зал</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/41/image/6156c97139af1.svg" alt="Неврология">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Неврология</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/tmp62060ae9e291f/image/62060ae9e2928.svg"
+                                        alt="Реабилитация">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Реабилитация</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/55/image/6253f2ad81bf6.svg" alt="Кардиология">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Кардиология</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/20/image/626bb1e708afc.png" alt="Невропатология">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника </h5>
+                                <p class="services-slider-name">Невропатология</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div data-index="2" class="directions-tab">
+                        <div class="grid">
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/21/image/6156c6f95eee4.svg" alt="Нейрохирургия">
+                                </div>
+                                <h5 class="services-slider-heading">Стационар </h5>
+                                <p class="services-slider-name">Нейрохирургия</p>
+                            </a>
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/28/image/6156c59365ab1.svg" alt="Маммология">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника Стационар </h5>
+                                <p class="services-slider-name">Маммология</p>
+                            </a>
+                            <a
+                                class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/36/image/6156c56924a79.svg"
+                                        alt="Травматология и ортопедия">
+                                </div>
+                                <h5 class="services-slider-heading">Поликлиника Стационар </h5>
+                                <p class="services-slider-name">Травматология и ортопедия</p>
+                            </a>
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/33/image/6156c3c08bcb7.svg"
+                                        alt="Родильное отделение">
+                                </div>
+                                <h5 class="services-slider-heading">Стационар </h5>
+                                <p class="services-slider-name">Родильное отделение</p>
+                            </a>
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/44/image/6156c719ca7c3.svg" alt="Общая хирургия">
+                                </div>
+                                <h5 class="services-slider-heading">Стационар </h5>
+                                <p class="services-slider-name">Общая хирургия</p>
+                            </a>
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/45/image/6156cada14079.svg" alt="Детская хирургия">
+                                </div>
+                                <h5 class="services-slider-heading">Стационар </h5>
+                                <p class="services-slider-name">Детская хирургия</p>
+                            </a>
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/46/image/6156ca86f0054.svg" alt="Ангио хирургия">
+                                </div>
+                                <h5 class="services-slider-heading">Стационар </h5>
+                                <p class="services-slider-name">Ангио хирургия</p>
+                            </a>
+                            <a 
+                                class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/47/image/6156cb631e646.svg"
+                                        alt="Оперативная гинекология">
+                                </div>
+                                <h5 class="services-slider-heading">Стационар </h5>
+                                <p class="services-slider-name">Оперативная гинекология</p>
+                            </a>
+                            <a 
+                                class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/48/image/6156ca084890c.svg"
+                                        alt="Медицинская реабилитация">
+                                </div>
+                                <h5 class="services-slider-heading">Стационар </h5>
+                                <p class="services-slider-name">Медицинская реабилитация</p>
+                            </a>
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/34/image/626685c772a08.svg"
+                                        alt="Соматическое отделение">
+                                </div>
+                                <h5 class="services-slider-heading">Стационар </h5>
+                                <p class="services-slider-name">Соматическое отделение</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div data-index="3" class="directions-tab">
+                        <div class="grid">
+                            <a  class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/27/image/6156c1afc146d.svg" alt="Лаборатория">
+                                </div>
+                                <h5 class="services-slider-heading">Диагностика </h5>
+                                <p class="services-slider-name">Лаборатория</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/17/image/6156c1cc1e988.svg"
+                                        alt="Компьютерная томография">
+                                </div>
+                                <h5 class="services-slider-heading">Диагностика </h5>
+                                <p class="services-slider-name">Компьютерная томография</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/19/image/6156c1f44a955.svg"
+                                        alt="Магнитно-резонансная томография">
+                                </div>
+                                <h5 class="services-slider-heading">Диагностика </h5>
+                                <p class="services-slider-name">Магнитно-резонансная томография</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/32/image/6156c20e6ae7b.svg" alt="Рентген">
+                                </div>
+                                <h5 class="services-slider-heading">Диагностика </h5>
+                                <p class="services-slider-name">Рентген</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/39/image/6156c220148a2.svg"
+                                        alt="Ультразвуковая диагностика">
+                                </div>
+                                <h5 class="services-slider-heading">Диагностика </h5>
+                                <p class="services-slider-name">Ультразвуковая диагностика</p>
+                            </a>
+                            <a class="direction-item">
+                                <div class="services-slider-icon">
+                                    <img src="storage/images/service/15/image/6156c294f2a1b.svg" alt="Эндоскопия">
+                                </div>
+                                <h5 class="services-slider-heading">Диагностика </h5>
+                                <p class="services-slider-name">Эндоскопия</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="layout-container">
+                    <div class="footer-col">
+                        <a href="#" class="footer-logo">
+                            <img src="img/logo_white.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-heading">Bro-clinic</h5>
+                        <a href="about.html" class="footer-link">
+                            <p class="footer-text">О медцентре</p>
+                        </a>
+                        <a href="team.html" class="footer-link">
+                            <p class="footer-text">Наша команда</p>
+                        </a>
+                        <a href="directions.html" class="footer-link">
+                            <p class="footer-text">Направления</p>
+                        </a>
+                        <a href="programs.html" class="footer-link">
+                            <p class="footer-text">Программы для женщин и детей</p>
+                        </a>
+                        <a href="check-up.html" class="footer-link">
+                            <p class="footer-text">Check-up программы</p>
+                        </a>
+                    </div>
+                    <div class="footer-col">
+                        <a href="prices.html" class="footer-link">
+                            <p class="footer-text">Прейскурант</p>
+                        </a>
+                        <a href="contacts.html" class="footer-link">
+                            <p class="footer-text">Контакты</p>
+                        </a>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-heading">
+                            <img src="img/icons/phone-teal.svg" alt="icon">
+                            Телефон:
+                        </h5>
+                        <a href="tel:+77777777777" class="footer-link">
+                            <p class="footer-text">+7-777-777-77-77</p>
+                        </a>
+                        <a href="tel:+77777777777" class="footer-link">
+                            <p class="footer-text">+7-777-777-77-77</p>
+                        </a>
+                        <a href="tel:+77777777777" class="footer-link">
+                            <p class="footer-text">+7-777-777-77-77</p>
+                        </a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h5 class="footer-heading">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                style="width:24px; height:24px; fill:#56cbd6;margin-right:6px;">
+                                <path
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                                </svg>
+                            WhatsApp:
+                        </h5>
+                        <a href="https://wa.me/77777777777" class="footer-link">
+                            <p class="footer-text">+7-777-777-77-77</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <div class="layout-container">
+                    <p class="footer-text footer-copyright">Все права защищены @ Bro-clinic 2023</p>
+                    <div class="footer-spacer"></div>
+                    
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/" class="footer-social" target="_blank">
+                            <img src="img/icons/fb-circle.svg" alt="social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="footer-social" target="_blank">
+                            <img src="img/icons/insta-circle.svg" alt="social">
+                        </a>
+                        <a href="directions.html#" class="footer-social">
+                            <img src="img/icons/wp-circle.svg" alt="social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="js/library/jquery3.js"></script>
+    <script src="js/review.js"></script>
+    
+    
+</body>
+
+</html>

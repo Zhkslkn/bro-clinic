@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bro-clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+
+  <body>
+    <main id="app" class="layout">
+      <header class="header">
+        <div class="header-top">
+          <div class="layout-container">
+            <a href="index.html" class="header-logo">
+              <img src="img/logo.png" alt="logo" />
+            </a>
+            <a
+              href="mailto:info@bro-clinic.kz"
+              class="header-mail"
+              style="margin-left: 20px; margin-right: 20px"
+            >
+              <img src="img/icons/email-gray.svg" alt="email icon" />
+              info@bro-clinic.kz
+            </a>
+            <button class="button header-callback-btn">
+              Записаться на консультацию
+            </button>
+          </div>
+        </div>
+        <div class="header-bot">
+          <div class="layout-container">
+            <div class="header-dropdown-wrp">
+              <span class="header-link">
+                Услуги
+                <img src="img/icons/select-arrow.svg" alt="arrow" />
+              </span>
+              <div class="header-dropdown">
+                <a href="directions.html">Направления</a>
+                <a href="programs.html">Программы для женщин и детей</a>
+                <a href="check-up.html">Check-up программы</a>
+                <a href="corporate-service.html">Корпоративное обслуживание</a>
+              </div>
+            </div>
+            <a href="prices.html" class="header-link">Прейскурант</a>
+            <a href="team.html" class="header-link">Наша команда</a>
+            <a href="about.html" class="header-link">О медцентре</a>
+            <a href="#" class="header-link">Новости</a>
+            <a href="contacts.html" class="header-link">Контакты</a>
+            <p class="button callback-review-btn" style="cursor: pointer">
+              Оставить отзыв
+            </p>
+            <form class="header-search-wrp" action="">
+              <img src="img/icons/search.svg" alt="search icon" />
+              <input
+                type="text"
+                placeholder="Поиск по сайту"
+                name="q"
+                minlength="3"
+                required
+              />
+            </form>
+          </div>
+        </div>
+      </header>
+      <header class="mob-header">
+        <a href="#" class="mob-header-logo">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <button class="mob-header-search">
+          <img src="img/icons/search.svg" alt="icon" />
+        </button>
+        <button class="mob-header-burger">
+          <img src="img/icons/burger.svg" alt="burger" />
+        </button>
+      </header>
+      <div class="mobile-menu">
+        <div class="mobile-menu-row -top">
+          <div class="mobile-menu-spacer"></div>
+          <button class="mobile-menu-close">
+            <img src="img/icons/close.svg" alt="close icon" />
+          </button>
+        </div>
+        <div class="mobile-menu-content">
+          <div class="mobile-menu-dropdown">
+            <div class="mobile-menu-row mobile-menu-dropdown-header">
+              <p class="mobile-menu-text">Услуги</p>
+              <div class="mobile-menu-spacer"></div>
+              <img
+                src="img/icons/select-arrow.svg"
+                alt="arrow"
+                class="mobile-menu-arrow"
+              />
+            </div>
+            <div class="mobile-menu-dropdown-content">
+              <a href="directions.html" class="mobile-menu-link">
+                <p class="mobile-menu-text -sm">Направления</p>
+              </a>
+              <a href="programs.html" class="mobile-menu-link">
+                <p class="mobile-menu-text -sm">Программы для женщин и детей</p>
+              </a>
+              <a href="check-up.html" class="mobile-menu-link">
+                <p class="mobile-menu-text -sm">Check-up программы</p>
+              </a>
+              <a href="corporate-service.html" class="mobile-menu-link">
+                <p class="mobile-menu-text -sm">Корпоративное обслуживание</p>
+              </a>
+            </div>
+          </div>
+          <a href="prices.html" class="mobile-menu-text -mb">Прейскурант</a>
+          <a href="team.html" class="mobile-menu-text -mb">Наша команда</a>
+          <a href="about.html" class="mobile-menu-text -mb">О медцентре</a>
+          <a href="#" class="mobile-menu-text -mb">Новости</a>
+          <a href="contacts.html" class="mobile-menu-text -mb">Контакты</a>
+          <p
+            class="button"
+            style="cursor: pointer"
+            onclick="document.querySelector('.callback-review-btn').click(); document.querySelector('.mobile-menu-close').click();"
+          >
+            Оставить отзыв
+          </p>
+        </div>
+        <div class="mobile-menu-footer">
+          <button
+            class="button"
+            onclick="document.querySelector('.header-callback-btn').click(); document.querySelector('.mobile-menu-close').click();"
+          >
+            Записаться на прием
+          </button>
+          <div class="mobile-menu-phone-wrp">
+            <img
+              src="img/icons/email-gray.svg"
+              alt="email icon"
+              class="mobile-menu-email-icon"
+            />
+            <a
+              href="mailto:info@bro-clinic.kz"
+              class="mobile-menu-text -xs -gray"
+              >info@bro-clinic.kz</a
+            >
+          </div>
+          <div class="mobile-menu-socials">
+            <a href="https://www.facebook.com/" class="mobile-menu-social">
+              <img src="img/icons/fb-circle.svg" alt="icon" />
+            </a>
+            <a href="https://www.instagram.com/" class="mobile-menu-social">
+              <img src="img/icons/insta-circle.svg" alt="icon" />
+            </a>
+            <a href="https://wa.me/+77777777777" class="mobile-menu-social">
+              <img src="img/icons/wp-circle.svg" alt="icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="modal callback-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-inner">
+          <button class="modal-close">
+            <img src="img/icons/close.svg" alt="icon" />
+          </button>
+          <app-form
+            :data='{
+                    "title": "Записаться на консультацию",
+                    "form_description": "Нажимая на кнопку «Записаться», вы даете согласие на обработку своих персональных данных",
+                    "name_placeholder": "Введите свое имя",
+                    "phone_placeholder": "Номер телефона",
+                    "directions_placeholder": "Выберите направление",
+                    "date_placeholder": "Дата приема"
+                  }'
+            :directions='[
+                {
+                  "id": 3,
+                  "name": "Наблюдение участкового семейного врача и педиатра"
+                },
+                {
+                  "id": 4,
+                  "name": "Наблюдение беременности"
+                },
+                {
+                  "id": 6,
+                  "name": "Операции в рамках ОСМС и ГОБМП"
+                },
+                {
+                  "id": 7,
+                  "name": "Лекарственное обеспечение жизненно необходимыми препаратами"
+                },
+                {
+                  "id": 8,
+                  "name": "Профилактические прививки"
+                },
+                {
+                  "id": 9,
+                  "name": "Медицинские осмотры(скрининги)"
+                },
+                {
+                  "id": 10,
+                  "name": "Акушерство и гинекология"
+                },
+                {
+                  "id": 11,
+                  "name": "Центр детского здоровья"
+                },
+                {
+                  "id": 12,
+                  "name": "Центр семейного здоровья"
+                },
+                {
+                  "id": 13,
+                  "name": "Дерматология"
+                },
+                {
+                  "id": 14,
+                  "name": "Эндокринология"
+                },
+                {
+                  "id": 15,
+                  "name": "Эндоскопия"
+                },
+                {
+                  "id": 16,
+                  "name": "Корпоративное медицинское обслуживание"
+                },
+                {
+                  "id": 17,
+                  "name": "Компьютерная томография"
+                },
+                {
+                  "id": 19,
+                  "name": "Магнитно-резонансная томография"
+                },
+                {
+                  "id": 20,
+                  "name": "Невропатология"
+                },
+                {
+                  "id": 21,
+                  "name": "Нейрохирургия"
+                },
+                {
+                  "id": 22,
+                  "name": "Офтальмология"
+                },
+                {
+                  "id": 23,
+                  "name": "Отделение диагностики"
+                },
+                {
+                  "id": 24,
+                  "name": "Физиотерапия"
+                },
+                {
+                  "id": 25,
+                  "name": "Женская консультация"
+                },
+                {
+                  "id": 26,
+                  "name": "Хирургия"
+                },
+                {
+                  "id": 27,
+                  "name": "Лаборатория"
+                },
+                {
+                  "id": 28,
+                  "name": "Маммология"
+                },
+                {
+                  "id": 29,
+                  "name": "Отоларингология"
+                },
+                {
+                  "id": 30,
+                  "name": "Педиатрия"
+                },
+                {
+                  "id": 31,
+                  "name": "ПРАВИЛА ПРЕДОСТАВЛЕНИЯ УСЛУГ"
+                },
+                {
+                  "id": 32,
+                  "name": "Рентген"
+                },
+                {
+                  "id": 33,
+                  "name": "Родильное отделение"
+                },
+                {
+                  "id": 34,
+                  "name": "Соматическое отделение"
+                },
+                {
+                  "id": 35,
+                  "name": "Терапевтический профиль"
+                },
+                {
+                  "id": 36,
+                  "name": "Травматология и ортопедия"
+                },
+                {
+                  "id": 37,
+                  "name": "Тренажерный зал"
+                },
+                {
+                  "id": 38,
+                  "name": "Урология"
+                },
+                {
+                  "id": 39,
+                  "name": "Ультразвуковая диагностика"
+                },
+                {
+                  "id": 41,
+                  "name": "Неврология"
+                },
+                {
+                  "id": 44,
+                  "name": "Общая хирургия"
+                },
+                {
+                  "id": 45,
+                  "name": "Детская хирургия"
+                },
+                {
+                  "id": 46,
+                  "name": "Ангио хирургия"
+                },
+                {
+                  "id": 47,
+                  "name": "Оперативная гинекология"
+                },
+                {
+                  "id": 48,
+                  "name": "Медицинская реабилитация"
+                },
+                {
+                  "id": 49,
+                  "name": "Рентген кабинет"
+                },
+                {
+                  "id": 50,
+                  "name": "Маммология"
+                },
+                {
+                  "id": 51,
+                  "name": "ЛОР Кабинет"
+                },
+                {
+                  "id": 52,
+                  "name": "Урология"
+                },
+                {
+                  "id": 53,
+                  "name": "Физиолечение"
+                },
+                {
+                  "id": 54,
+                  "name": "Реабилитация"
+                },
+                {
+                  "id": 55,
+                  "name": "Кардиология"
+                }
+              ]'
+            :address="1"
+            :addresses='{
+                    "1": "г. Астана, Кабанбай батыр 60"
+                  }'
+          >
+          </app-form>
+        </div>
+      </div>
+      <div class="modal review-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-inner">
+          <button class="modal-close" id="review-btn-cls">
+            <img class="modal-close-img" src="img/icons/close.svg" alt="icon" />
+          </button>
+          <form class="callback-form">
+            <div>
+              <h5 class="callback-form-title">Оставить отзыв</h5>
+              <label class="input-wrp"
+                ><input
+                  type="text"
+                  name="reviewpatient"
+                  required="required"
+                  class="input"
+                  id="reviewName"
+                />
+                <span class="input-label">Введите свое имя</span></label
+              >
+              <label class="input-wrp"
+                ><input
+                  type="tel"
+                  name="reviewPhone"
+                  required="required"
+                  class="input phone-mask"
+                  id="reviewPhone"
+                />
+                <span class="input-label">Введите номер телефона</span></label
+              >
+              <label class="input-wrp">
+                <textarea
+                  name="phone"
+                  required="required"
+                  class="input"
+                  placeholder="Введите отзыв"
+                  id="reviewDescr"
+                ></textarea>
+              </label>
+
+              <a
+                href="#"
+                onclick="checkReviewForm();return false;"
+                class="button"
+                >Оставить отзыв</a
+              >
+              <p class="callback-form-text">
+                Нажимая на кнопку «Оставить отзыв», вы даете согласие на
+                обработку своих персональных данных
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal callback-success-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-inner">
+          <button class="modal-close">
+            <img src="img/icons/close.svg" alt="icon" />
+          </button>
+          <h3 class="modal-title">Ваша заявка принята!</h3>
+          <h3 class="modal-title">Спасибо!</h3>
+          <p class="modal-text">
+            Ваша заявка получена, мы свяжемся с Вами в ближайшее время!
+          </p>
+          <p class="modal-text">
+            Мы гарантируем сохранность Ваших личных данных
+          </p>
+          <button class="modal-btn">Закрыть</button>
+        </div>
+      </div>
+      <div class="modal search-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-inner">
+          <div class="modal-header">
+            <form class="search-input" action="">
+              <input
+                type="text"
+                placeholder="Поиск по сайту"
+                name="q"
+                minlength="3"
+                required
+              />
+            </form>
+            <button class="search-modal-cancel">Отмена</button>
+          </div>
+          <div class="modal-content"></div>
+        </div>
+      </div>
+      <div class="layout-content">
+        <section class="home-hero">
+          <div class="layout-container">
+            <div class="home-hero-content">
+              <div class="home-hero-row">
+                <div class="home-hero-txt-wrp">
+                  <h3 class="home-hero-title">О медцентре</h3>
+                  <p class="home-hero-text">
+                    Современный специализированный медицинский центр в Астане с
+                    широким спектром медицинских услуг.
+                  </p>
+                </div>
+              </div>
+              <div class="home-hero-slider-wrp">
+                <div class="swiper-container home-hero-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/banner-1.jpg" alt="landing" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/banner-2.jpg" alt="Slide 2" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/banner-4.jpg" alt="Slide 4" />
+                    </div>
+                  </div>
+                  <div class="home-hero-pagination"></div>
+                </div>
+              </div>
+            </div>
+            <div class="home-hero-form">
+              <app-form
+                :data='{
+                    "title": "Записаться на консультацию",
+                    "form_description": "Нажимая на кнопку «Записаться», вы даете согласие на обработку своих персональных данных",
+                    "name_placeholder": "Введите свое имя",
+                    "phone_placeholder": "Номер телефона",
+                    "directions_placeholder": "Выберите направление",
+                    "date_placeholder": "Дата приема"
+                  }'
+                :directions='[
+                {
+                  "id": 3,
+                  "name": "Наблюдение участкового семейного врача и педиатра"
+                },
+                {
+                  "id": 4,
+                  "name": "Наблюдение беременности"
+                },
+                {
+                  "id": 6,
+                  "name": "Операции в рамках ОСМС и ГОБМП"
+                },
+                {
+                  "id": 7,
+                  "name": "Лекарственное обеспечение жизненно необходимыми препаратами"
+                },
+                {
+                  "id": 8,
+                  "name": "Профилактические прививки"
+                },
+                {
+                  "id": 9,
+                  "name": "Медицинские осмотры(скрининги)"
+                },
+                {
+                  "id": 10,
+                  "name": "Акушерство и гинекология"
+                },
+                {
+                  "id": 11,
+                  "name": "Центр детского здоровья"
+                },
+                {
+                  "id": 12,
+                  "name": "Центр семейного здоровья"
+                },
+                {
+                  "id": 13,
+                  "name": "Дерматология"
+                },
+                {
+                  "id": 14,
+                  "name": "Эндокринология"
+                },
+                {
+                  "id": 15,
+                  "name": "Эндоскопия"
+                },
+                {
+                  "id": 16,
+                  "name": "Корпоративное медицинское обслуживание"
+                },
+                {
+                  "id": 17,
+                  "name": "Компьютерная томография"
+                },
+                {
+                  "id": 19,
+                  "name": "Магнитно-резонансная томография"
+                },
+                {
+                  "id": 20,
+                  "name": "Невропатология"
+                },
+                {
+                  "id": 21,
+                  "name": "Нейрохирургия"
+                },
+                {
+                  "id": 22,
+                  "name": "Офтальмология"
+                },
+                {
+                  "id": 23,
+                  "name": "Отделение диагностики"
+                },
+                {
+                  "id": 24,
+                  "name": "Физиотерапия"
+                },
+                {
+                  "id": 25,
+                  "name": "Женская консультация"
+                },
+                {
+                  "id": 26,
+                  "name": "Хирургия"
+                },
+                {
+                  "id": 27,
+                  "name": "Лаборатория"
+                },
+                {
+                  "id": 28,
+                  "name": "Маммология"
+                },
+                {
+                  "id": 29,
+                  "name": "Отоларингология"
+                },
+                {
+                  "id": 30,
+                  "name": "Педиатрия"
+                },
+                {
+                  "id": 31,
+                  "name": "ПРАВИЛА ПРЕДОСТАВЛЕНИЯ УСЛУГ"
+                },
+                {
+                  "id": 32,
+                  "name": "Рентген"
+                },
+                {
+                  "id": 33,
+                  "name": "Родильное отделение"
+                },
+                {
+                  "id": 34,
+                  "name": "Соматическое отделение"
+                },
+                {
+                  "id": 35,
+                  "name": "Терапевтический профиль"
+                },
+                {
+                  "id": 36,
+                  "name": "Травматология и ортопедия"
+                },
+                {
+                  "id": 37,
+                  "name": "Тренажерный зал"
+                },
+                {
+                  "id": 38,
+                  "name": "Урология"
+                },
+                {
+                  "id": 39,
+                  "name": "Ультразвуковая диагностика"
+                },
+                {
+                  "id": 41,
+                  "name": "Неврология"
+                },
+                {
+                  "id": 44,
+                  "name": "Общая хирургия"
+                },
+                {
+                  "id": 45,
+                  "name": "Детская хирургия"
+                },
+                {
+                  "id": 46,
+                  "name": "Ангио хирургия"
+                },
+                {
+                  "id": 47,
+                  "name": "Оперативная гинекология"
+                },
+                {
+                  "id": 48,
+                  "name": "Медицинская реабилитация"
+                },
+                {
+                  "id": 49,
+                  "name": "Рентген кабинет"
+                },
+                {
+                  "id": 50,
+                  "name": "Маммология"
+                },
+                {
+                  "id": 51,
+                  "name": "ЛОР Кабинет"
+                },
+                {
+                  "id": 52,
+                  "name": "Урология"
+                },
+                {
+                  "id": 53,
+                  "name": "Физиолечение"
+                },
+                {
+                  "id": 54,
+                  "name": "Реабилитация"
+                },
+                {
+                  "id": 55,
+                  "name": "Кардиология"
+                }
+              ]'
+                :address="1"
+                :addresses='{
+                    "1": "г. Астана, Кабанбай батыр 60"
+                  }'
+              >
+              </app-form>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-services">
+          <div class="layout-container">
+            <h3 class="section-title -center">
+              Медицинский центр Bro-clinic в Астане
+            </h3>
+            <div class="home-services-inner">
+              <div class="home-services-row -nav">
+                <nav class="home-services-nav">
+                  <button
+                    data-index="1"
+                    class="home-services-btn home-services-btn-item -active"
+                  >
+                    Поликлиника
+                  </button>
+                  <button
+                    data-index="2"
+                    class="home-services-btn home-services-btn-item"
+                  >
+                    Стационар
+                  </button>
+                  <button
+                    data-index="3"
+                    class="home-services-btn home-services-btn-item"
+                  >
+                    Диагностика
+                  </button>
+                  <a href="corporate-service.html" class="home-services-btn"
+                    >Корпоративное обслуживание</a
+                  >
+                </nav>
+              </div>
+              <div class="home-services-divider"></div>
+              <div
+                data-index="1"
+                class="home-services-tab"
+                style="display: block"
+              >
+                <div class="home-services-wrapper">
+                  <div class="home-services-row -grid">
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/35/image/6156c2b92106b.svg"
+                        alt="icon"
+                      />
+                      Терапевтический профиль
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/25/image/6156cb10735d3.svg"
+                        alt="icon"
+                      />
+                      Женская консультация
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/10/image/6156c3af6b921.svg"
+                        alt="icon"
+                      />
+                      Акушерство и гинекология
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/11/image/6156caf5d3694.svg"
+                        alt="icon"
+                      />
+                      Центр детского здоровья
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/30/image/6156c3fc5da25.svg"
+                        alt="icon"
+                      />
+                      Педиатрия
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/22/image/6156c456de0d9.svg"
+                        alt="icon"
+                      />
+                      Офтальмология
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/29/image/6156c493de732.svg"
+                        alt="icon"
+                      />
+                      Отоларингология
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/13/image/6156c4c55a162.svg"
+                        alt="icon"
+                      />
+                      Дерматология
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/14/image/6156c5057bde0.png"
+                        alt="icon"
+                      />
+                      Эндокринология
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/26/image/6156c5378cf8e.svg"
+                        alt="icon"
+                      />
+                      Хирургия
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/36/image/6156c56924a79.svg"
+                        alt="icon"
+                      />
+                      Травматология и ортопедия
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/28/image/6156c59365ab1.svg"
+                        alt="icon"
+                      />
+                      Маммология
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/38/image/6156c5aee71e3.svg"
+                        alt="icon"
+                      />
+                      Урология
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/24/image/6156cb1d38790.svg"
+                        alt="icon"
+                      />
+                      Физиотерапия
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/37/image/6156c68abf7ca.svg"
+                        alt="icon"
+                      />
+                      Тренажерный зал
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/41/image/6156c97139af1.svg"
+                        alt="icon"
+                      />
+                      Неврология
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/tmp62060ae9e291f/image/62060ae9e2928.svg"
+                        alt="icon"
+                      />
+                      Реабилитация
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/55/image/6253f2ad81bf6.svg"
+                        alt="icon"
+                      />
+                      Кардиология
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/20/image/626bb1e708afc.png"
+                        alt="icon"
+                      />
+                      Невропатология
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div data-index="2" class="home-services-tab">
+                <div class="home-services-wrapper">
+                  <div class="home-services-row -grid">
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/21/image/6156c6f95eee4.svg"
+                        alt="icon"
+                      />
+                      Нейрохирургия
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/28/image/6156c59365ab1.svg"
+                        alt="icon"
+                      />
+                      Маммология
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/36/image/6156c56924a79.svg"
+                        alt="icon"
+                      />
+                      Травматология и ортопедия
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/33/image/6156c3c08bcb7.svg"
+                        alt="icon"
+                      />
+                      Родильное отделение
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/44/image/6156c719ca7c3.svg"
+                        alt="icon"
+                      />
+                      Общая хирургия
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/45/image/6156cada14079.svg"
+                        alt="icon"
+                      />
+                      Детская хирургия
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/46/image/6156ca86f0054.svg"
+                        alt="icon"
+                      />
+                      Ангио хирургия
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/47/image/6156cb631e646.svg"
+                        alt="icon"
+                      />
+                      Оперативная гинекология
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/48/image/6156ca084890c.svg"
+                        alt="icon"
+                      />
+                      Медицинская реабилитация
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/34/image/626685c772a08.svg"
+                        alt="icon"
+                      />
+                      Соматическое отделение
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div data-index="3" class="home-services-tab">
+                <div class="home-services-wrapper">
+                  <div class="home-services-row -grid">
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/27/image/6156c1afc146d.svg"
+                        alt="icon"
+                      />
+                      Лаборатория
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/17/image/6156c1cc1e988.svg"
+                        alt="icon"
+                      />
+                      Компьютерная томография
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/19/image/6156c1f44a955.svg"
+                        alt="icon"
+                      />
+                      Магнитно-резонансная томография
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/32/image/6156c20e6ae7b.svg"
+                        alt="icon"
+                      />
+                      Рентген
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/39/image/6156c220148a2.svg"
+                        alt="icon"
+                      />
+                      Ультразвуковая диагностика
+                    </p>
+                    <p class="home-services-link">
+                      <img
+                        src="storage/images/service/15/image/6156c294f2a1b.svg"
+                        alt="icon"
+                      />
+                      Эндоскопия
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-programs">
+          <div class="layout-container">
+            <h4 class="section-title -center">Программы медицинских услуг</h4>
+            <p class="home-programs-text">
+              Клиника «Bro-clinic» предлагает медицинские программы для женщин и
+              детей.
+            </p>
+            <div class="grid">
+              <a href="program/vip-malysh.html" class="program-item">
+                <p class="program-item-name">Малыш Плюс</p>
+                <img
+                  src="storage/images/program/3/image/6151a22fb5688.png"
+                  alt="image"
+                />
+              </a>
+              <a href="program/uchet-po-beremennosti.html" class="program-item">
+                <p class="program-item-name">Патронаж беременных</p>
+                <img
+                  src="storage/images/program/4/image/6151a16ee5c32.png"
+                  alt="image"
+                />
+              </a>
+              <a href="program/rody.html" class="program-item">
+                <p class="program-item-name">Роды</p>
+                <img
+                  src="storage/images/program/5/image/6151a17e1a118.png"
+                  alt="image"
+                />
+              </a>
+              <a href="program/malyutka.html" class="program-item">
+                <p class="program-item-name">Малютка</p>
+                <img
+                  src="storage/images/program/7/image/6151a19206398.png"
+                  alt="image"
+                />
+              </a>
+              <a href="program/vip-malyutka.html" class="program-item">
+                <p class="program-item-name">Малютка Плюс</p>
+                <img
+                  src="storage/images/program/8/image/6151a240e7909.png"
+                  alt="image"
+                />
+              </a>
+              <a href="program/malysh.html" class="program-item">
+                <p class="program-item-name">Малыш</p>
+                <img
+                  src="storage/images/program/9/image/6151a1a566c80.png"
+                  alt="image"
+                />
+              </a>
+              <a href="#" class="program-item">
+                <p class="program-item-name">Золотой возраст</p>
+                <img
+                  src="storage/images/program/10/image/62b2d40e130af.png"
+                  alt="image"
+                />
+              </a>
+              <a href="directions.html" class="home-programs-more">
+                Все услуги
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="services-slider-wrp">
+          <div class="layout-container">
+            <div class="services-slider-row">
+              <h4 class="section-title">
+                Check-up пакеты для Вас и Ваших близких
+              </h4>
+              <div class="services-slider-spacer"></div>
+              <button class="services-slider-prev">
+                <img src="img/icons/slider-arrow.svg" alt="arrow" />
+              </button>
+              <button class="services-slider-next">
+                <img src="img/icons/slider-arrow.svg" alt="arrow" />
+              </button>
+            </div>
+            <div class="services-slider-slider-wrp">
+              <div class="services-slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="check-up/18.html" class="check-up-item">
+                      <h5 class="check-up-item-heading -teal">
+                        Check-up программа
+                      </h5>
+                      <p class="check-up-item-name -mb">
+                        Программа «Check-up для будущих мам»
+                      </p>
+                      <h5 class="check-up-item-heading">Результат</h5>
+                      <p class="check-up-item-text -mb"></p>
+                      <h5 class="check-up-item-heading">Стоимость</h5>
+                      <p class="check-up-item-text -semibold">324 500 тенге</p>
+                      <p class="check-up-item-more">Подробнее</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="check-up/21.html" class="check-up-item">
+                      <h5 class="check-up-item-heading -teal">
+                        Check-up программа
+                      </h5>
+                      <p class="check-up-item-name -mb">
+                        Программа «Check-up для мужчин»
+                      </p>
+                      <h5 class="check-up-item-heading">Результат</h5>
+                      <p class="check-up-item-text -mb"></p>
+                      <h5 class="check-up-item-heading">Стоимость</h5>
+                      <p class="check-up-item-text -semibold">205 700 тенге</p>
+                      <p class="check-up-item-more">Подробнее</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="check-up/22.html" class="check-up-item">
+                      <h5 class="check-up-item-heading -teal">
+                        Check-up программа
+                      </h5>
+                      <p class="check-up-item-name -mb">
+                        Программа «Check-up для женщин»
+                      </p>
+                      <h5 class="check-up-item-heading">Результат</h5>
+                      <p class="check-up-item-text -mb"></p>
+                      <h5 class="check-up-item-heading">Стоимость</h5>
+                      <p class="check-up-item-text -semibold">211 750 тенге</p>
+                      <p class="check-up-item-more">Подробнее</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="check-up/23.html" class="check-up-item">
+                      <h5 class="check-up-item-heading -teal">
+                        Check-up программа
+                      </h5>
+                      <p class="check-up-item-name -mb">
+                        Программа «Стандартный Check-up для детей»
+                      </p>
+                      <h5 class="check-up-item-heading">Результат</h5>
+                      <p class="check-up-item-text -mb"></p>
+                      <h5 class="check-up-item-heading">Стоимость</h5>
+                      <p class="check-up-item-text -semibold">151 000 тенге</p>
+                      <p class="check-up-item-more">Подробнее</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="check-up/24.html" class="check-up-item">
+                      <h5 class="check-up-item-heading -teal">
+                        Check-up программа
+                      </h5>
+                      <p class="check-up-item-name -mb">
+                        Программа «Стандартный Сheck-up»
+                      </p>
+                      <h5 class="check-up-item-heading">Результат</h5>
+                      <p class="check-up-item-text -mb"></p>
+                      <h5 class="check-up-item-heading">Стоимость</h5>
+                      <p class="check-up-item-text -semibold">242 000 тенге</p>
+                      <p class="check-up-item-more">Подробнее</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="check-up/25.html" class="check-up-item">
+                      <h5 class="check-up-item-heading -teal">
+                        Check-up программа
+                      </h5>
+                      <p class="check-up-item-name -mb">
+                        Программа «Расширенный Check-up»
+                      </p>
+                      <h5 class="check-up-item-heading">Результат</h5>
+                      <p class="check-up-item-text -mb"></p>
+                      <h5 class="check-up-item-heading">Стоимость</h5>
+                      <p class="check-up-item-text -semibold">520 000 тенге</p>
+                      <p class="check-up-item-more">Подробнее</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="check-up/26.html" class="check-up-item">
+                      <h5 class="check-up-item-heading -teal">
+                        Check-up программа
+                      </h5>
+                      <p class="check-up-item-name -mb">
+                        Программа «Расширенный Check-up для детей»
+                      </p>
+                      <h5 class="check-up-item-heading">Результат</h5>
+                      <p class="check-up-item-text -mb"></p>
+                      <h5 class="check-up-item-heading">Стоимость</h5>
+                      <p class="check-up-item-text -semibold">280 000 тенге</p>
+                      <p class="check-up-item-more">Подробнее</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="services-slider-nav">
+                <button class="services-slider-prev">
+                  <img src="img/icons/slider-arrow.svg" alt="arrow" />
+                </button>
+                <div class="services-slider-pagination"></div>
+                <button class="services-slider-next">
+                  <img src="img/icons/slider-arrow.svg" alt="arrow" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-about">
+          <div class="layout-container">
+            <div class="home-about-left">
+              <div>
+                <h4 class="section-title">Работаем для вас</h4>
+                <p class="home-about-text">
+                  Основной задачей клиники «Bro-clinic» всегда было, есть и
+                  будет высокое качество оказания медицинских услуг и
+                  предоставление максимального комфорта для наших пациентов.
+                  Ежедневно мы оказываем медицинские услуги для пациентов в
+                  разной возрастной категории и с разными заболеваниями.
+                </p>
+                <a href="about.html" class="button"> О нас </a>
+              </div>
+            </div>
+            <div class="home-about-right">
+              <div class="home-about-block -first">
+                <span class="home-about-value">6000</span>
+                <p class="home-about-heading">Проведено операций</p>
+              </div>
+              <div class="home-about-block -second">
+                <span class="home-about-value">7000</span>
+                <p class="home-about-heading">Родилось детей</p>
+              </div>
+              <div class="home-about-block -third">
+                <span class="home-about-value">7500</span>
+                <p class="home-about-heading">Взято пациентов на учет</p>
+              </div>
+              <div class="home-about-block -fourth">
+                <span class="home-about-value">3400</span>
+                <p class="home-about-heading">Проведено Чек-апов</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-team">
+          <div class="layout-container">
+            <div class="home-team-left">
+              <img src="img/home-team.png" alt="image" class="home-team-img" />
+            </div>
+            <div class="home-team-right">
+              <div>
+                <h4 class="section-title">
+                  У нас работают профессионалы своего дела
+                </h4>
+                <p class="home-team-text">
+                  В нашей клинике Вас будет обслуживать квалифицированный,
+                  внимательный персонал, который будет относиться к Вам с
+                  заботой, подробно ответит на интересующие Вас вопросы, создаст
+                  необходимые условия для комфортного прохождения процедур.
+                </p>
+                <a href="team.html" class="button">Наша команда</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="layout-container">
+            <div class="footer-col">
+              <a href="index.html" class="footer-logo">
+                <img src="img/logo_white.png" alt="logo" />
+              </a>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-heading">Bro Clinic</h5>
+              <a href="about.html" class="footer-link">
+                <p class="footer-text">О медцентре</p>
+              </a>
+              <a href="team.html" class="footer-link">
+                <p class="footer-text">Наша команда</p>
+              </a>
+              <a href="directions.html" class="footer-link">
+                <p class="footer-text">Направления</p>
+              </a>
+              <a href="programs.html" class="footer-link">
+                <p class="footer-text">Программы для женщин и детей</p>
+              </a>
+              <a href="check-up.html" class="footer-link">
+                <p class="footer-text">Check-up программы</p>
+              </a>
+            </div>
+            <div class="footer-col">
+              <a href="prices.html" class="footer-link">
+                <p class="footer-text">Прейскурант</p>
+              </a>
+              <a href="contacts.html" class="footer-link">
+                <p class="footer-text">Контакты</p>
+              </a>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-heading">
+                <img src="img/icons/phone-teal.svg" alt="icon" />
+                Телефон:
+              </h5>
+              <a href="tel:+77777777777" class="footer-link">
+                <p class="footer-text">+7 777 777 77 77</p>
+              </a>
+              <a href="tel:+77777777777" class="footer-link">
+                <p class="footer-text">+7 777 777 77 77</p>
+              </a>
+              <a href="tel:+77777777777" class="footer-link">
+                <p class="footer-text">+7 777 777 77 77</p>
+              </a>
+            </div>
+
+            <div class="footer-col">
+              <h5 class="footer-heading">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  style="
+                    width: 24px;
+                    height: 24px;
+                    fill: #56cbd6;
+                    margin-right: 6px;
+                  "
+                >
+                  <path
+                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                  />
+                </svg>
+                WhatsApp:
+              </h5>
+              <a href="https://wa.me/77777777777" class="footer-link">
+                <p class="footer-text">+7 777 777 77 77</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bot">
+          <div class="layout-container">
+            <p class="footer-text footer-copyright">
+              Все права защищены @ Bro Clinic 2023
+            </p>
+            <div class="footer-spacer"></div>
+
+            <div class="footer-socials">
+              <a
+                href="https://www.facebook.com/"
+                class="footer-social"
+                target="_blank"
+              >
+                <img src="img/icons/fb-circle.svg" alt="social" />
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                class="footer-social"
+                target="_blank"
+              >
+                <img src="img/icons/insta-circle.svg" alt="social" />
+              </a>
+              <a href="#" class="footer-social">
+                <img src="img/icons/wp-circle.svg" alt="social" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/library/jquery3.js"></script>
+    <script src="js/library/webpack.js"></script>
+    <script src="js/review.js"></script>
+    <script src="js/animate.js"></script>
+  </body>
+</html>

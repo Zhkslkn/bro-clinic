@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Малыш</title>
+    <meta
+      property="og:image"
+      content="https://bro-clinic.kz/storage/images/program/9/image/6151a1a566c80.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="language" content="Russian" />
+    <link rel="stylesheet" href="../css/app.css" />
+  </head>
+  <body>
+    <main id="app" class="layout">
+      <header class="header">
+        <div class="header-top">
+          <div class="layout-container">
+            <a href="../index.html" class="header-logo">
+              <img src="../img/logo.png" alt="logo" />
+            </a>
+
+            <a
+              href="mailto:info@bro-clinic.kz"
+              class="header-mail"
+              style="margin-left: 20px; margin-right: 20px"
+            >
+              <img src="../img/icons/email-gray.svg" alt="email icon" />
+              info@bro-clinic.kz
+            </a>
+          </div>
+        </div>
+        <div class="header-bot">
+          <div class="layout-container">
+            <div class="header-dropdown-wrp">
+              <span class="header-link">
+                Услуги
+                <img src="../img/icons/select-arrow.svg" alt="arrow" />
+              </span>
+              <div class="header-dropdown">
+                <a href="../directions.html">Направления</a>
+                <a href="../programs.html">Программы для женщин и детей</a>
+                <a href="../check-up.html">Check-up программы</a>
+                <a href="../corporate-service.html"
+                  >Корпоративное обслуживание</a
+                >
+              </div>
+            </div>
+            <a href="../prices.html" class="header-link">Прейскурант</a>
+            <a href="../team.html" class="header-link">Наша команда</a>
+            <a href="../about.html" class="header-link">О медцентре</a>
+            <a href="#" class="header-link">Новости</a>
+            <a href="../contacts.html" class="header-link">Контакты</a>
+
+            <form class="header-search-wrp" action="">
+              <img src="../img/icons/search.svg" alt="search icon" />
+              <input
+                type="text"
+                placeholder="Поиск по сайту"
+                name="q"
+                minlength="3"
+                required
+              />
+            </form>
+          </div>
+        </div>
+      </header>
+      <header class="mob-header">
+        <a href="../index.html" class="mob-header-logo">
+          <img src="../img/logo.png" alt="logo" />
+        </a>
+        <button class="mob-header-search">
+          <img src="../img/icons/search.svg" alt="icon" />
+        </button>
+        <button class="mob-header-burger">
+          <img src="../img/icons/burger.svg" alt="burger" />
+        </button>
+      </header>
+      <div class="mobile-menu">
+        <div class="mobile-menu-row -top">
+          <div class="mobile-menu-select-wrp">
+            <img
+              src="../img/icons/lang.svg"
+              alt="icon"
+              class="mobile-menu-select-icon"
+            />
+            <select
+              class="mobile-menu-select"
+              onchange="javascript:(window.location = this.value)"
+            >
+              <option value="https://bro-clinic.kz/switch-lang/en">
+                English
+              </option>
+              <option value="https://bro-clinic.kz/switch-lang/kk">
+                Kazakh
+              </option>
+              <option selected value="https://bro-clinic.kz/switch-lang/ru">
+                Russian
+              </option>
+            </select>
+            <img
+              src="../img/icons/select-arrow.svg"
+              alt="arrow"
+              class="mobile-menu-select-arrow"
+            />
+          </div>
+          <div class="mobile-menu-spacer"></div>
+          <button class="mobile-menu-close">
+            <img src="../img/icons/close.svg" alt="close icon" />
+          </button>
+        </div>
+
+        <div class="mobile-menu-content">
+          <div class="mobile-menu-dropdown">
+            <div class="mobile-menu-row mobile-menu-dropdown-header">
+              <p class="mobile-menu-text">Услуги</p>
+              <div class="mobile-menu-spacer"></div>
+              <img
+                src="../img/icons/select-arrow.svg"
+                alt="arrow"
+                class="mobile-menu-arrow"
+              />
+            </div>
+            <div class="mobile-menu-dropdown-content">
+              <a href="../directions.html" class="mobile-menu-link">
+                <p class="mobile-menu-text -sm">Направления</p>
+              </a>
+              <a href="../programs.html" class="mobile-menu-link">
+                <p class="mobile-menu-text -sm">Программы для женщин и детей</p>
+              </a>
+              <a href="../check-up.html" class="mobile-menu-link">
+                <p class="mobile-menu-text -sm">Check-up программы</p>
+              </a>
+              <a href="../corporate-service.html" class="mobile-menu-link">
+                <p class="mobile-menu-text -sm">Корпоративное обслуживание</p>
+              </a>
+            </div>
+          </div>
+          <a href="../prices.html" class="mobile-menu-text -mb">Прейскурант</a>
+          <a href="../team.html" class="mobile-menu-text -mb">Наша команда</a>
+          <a href="../about.html" class="mobile-menu-text -mb">О медцентре</a>
+          <a href="#" class="mobile-menu-text -mb">Новости</a>
+          <a href="../contacts.html" class="mobile-menu-text -mb">Контакты</a>
+        </div>
+        <div class="mobile-menu-footer">
+          <div class="mobile-menu-phone-wrp">
+            <img
+              src="../img/icons/phone-gray.svg"
+              alt="phone icon"
+              class="mobile-menu-phone-icon"
+            />
+            <a
+              href="tel:+77777777777"
+              class="mobile-menu-text mobile-menu-phone -xs -gray"
+              >+7-777-777-77-77</a
+            >
+            <a
+              href="tel:+77777777777"
+              class="mobile-menu-text mobile-menu-phone -xs -gray"
+              >+7-777-777-77-77</a
+            >
+            <a
+              href="tel:+77777777777"
+              class="mobile-menu-text mobile-menu-phone -xs -gray"
+              >+7-777-777-77-77</a
+            >
+            <img
+              src="../img/icons/email-gray.svg"
+              alt="email icon"
+              class="mobile-menu-email-icon"
+            />
+            <a
+              href="mailto:info@bro-clinic.kz"
+              class="mobile-menu-text -xs -gray"
+              >info@bro-clinic.kz</a
+            >
+          </div>
+          <div class="mobile-menu-socials">
+            <a href="https://www.facebook.com/" class="mobile-menu-social">
+              <img src="../img/icons/fb-circle.svg" alt="icon" />
+            </a>
+            <a href="https://www.instagram.com/" class="mobile-menu-social">
+              <img src="../img/icons/insta-circle.svg" alt="icon" />
+            </a>
+            <a href="malysh.html#" class="mobile-menu-social">
+              <img src="../img/icons/wp-circle.svg" alt="icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal search-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-inner">
+          <div class="modal-header">
+            <form class="search-input" action="">
+              <input
+                type="text"
+                placeholder="Поиск по сайту"
+                name="q"
+                minlength="3"
+                required
+              />
+            </form>
+            <button class="search-modal-cancel">Отмена</button>
+          </div>
+          <div class="modal-content"></div>
+        </div>
+      </div>
+      <div class="layout-content">
+        <div class="program-inner layout-container">
+          <div class="breadcrumbs -mb">
+            <a href="../index.html" class="breadcrumbs-link">Главная</a>
+            <img
+              src="../img/icons/select-arrow.svg"
+              alt="arrow"
+              class="breadcrumbs-arrow"
+            />
+            <a href="../programs.html" class="breadcrumbs-link"
+              >Программы для женщин и детей</a
+            >
+            <img
+              src="../img/icons/select-arrow.svg"
+              alt="arrow"
+              class="breadcrumbs-arrow"
+            />
+            <span class="breadcrumbs-link">Малыш</span>
+          </div>
+          <h1 class="section-title">Малыш</h1>
+          <div class="program-inner-row -mob-col">
+            <div class="program-inner-left -order-1">
+              <div class="program-inner-address">
+                <div class="program-inner-row -align-center">
+                  <img
+                    src="../img/icons/pin-house.svg"
+                    alt="icon"
+                    class="program-inner-address-icon"
+                  />
+                  <h5 class="program-inner-heading -md">Клиника</h5>
+                </div>
+                <p class="program-inner-text">Кабанбай батыр, 60</p>
+              </div>
+            </div>
+            <div class="program-inner-right -order-2">
+              <p>
+                <strong
+                  >ОБЪЕМ УСЛУГ ОКАЗЫВАЕМЫХ ПО ПРОГРАММЕ
+                  &quot;МАЛЫШ&quot;</strong
+                >
+              </p>
+
+              <p>
+                <strong
+                  >(Медицинское обслуживание детей от 1 года до 2-х лет)</strong
+                >
+              </p>
+
+              <table
+                border="1"
+                cellpadding="0"
+                cellspacing="0"
+                style="border-collapse: collapse; width: 494.5pt"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      style="
+                        border-color: black;
+                        border-style: solid;
+                        border-width: 1pt;
+                        width: 23.35pt;
+                      "
+                    >
+                      <p>n/n</p>
+                    </td>
+                    <td
+                      style="
+                        border-color: black;
+                        border-left: none;
+                        border-style: solid;
+                        border-width: 1pt;
+                        width: 246.25pt;
+                      "
+                    >
+                      <p>Наименование услуг</p>
+                    </td>
+                    <td
+                      style="
+                        border-color: black;
+                        border-left: none;
+                        border-style: solid;
+                        border-width: 1pt;
+                        width: 224.9pt;
+                      "
+                    >
+                      <p>Количество посещений, предоставляемых услуг</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        border-color: black;
+                        border-style: solid;
+                        border-top: none;
+                        border-width: 1pt;
+                        width: 23.35pt;
+                      "
+                    >
+                      <p>&nbsp;</p>
+
+                      <p>1</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        width: 246.25pt;
+                      "
+                    >
+                      <p>Плановые посещения педиатра</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        width: 224.9pt;
+                      "
+                    >
+                      <p>1 раз в квартал до 2 лет</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        border-color: black;
+                        border-style: solid;
+                        border-top: none;
+                        border-width: 1pt;
+                        width: 23.35pt;
+                      "
+                    >
+                      <p>2</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        width: 246.25pt;
+                      "
+                    >
+                      <p>Осмотр &nbsp;узких специалистов:</p>
+
+                      <p>1)Отоларинголог</p>
+
+                      <p>2)Окулист</p>
+
+                      <p>3)Ортопед</p>
+
+                      <p>4)Невропатолог</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        width: 224.9pt;
+                      "
+                    >
+                      <p>1 раз в полгода, по показаниям</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        border-color: black;
+                        border-style: solid;
+                        border-top: none;
+                        border-width: 1pt;
+                        height: 24pt;
+                        width: 23.35pt;
+                      "
+                    >
+                      <p>3</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 24pt;
+                        width: 246.25pt;
+                      "
+                    >
+                      <p>Вызов педиатра на дом</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 24pt;
+                        width: 224.9pt;
+                      "
+                    >
+                      <p>&nbsp;в случае заболевания Пациента</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        border-color: black;
+                        border-style: solid;
+                        border-top: none;
+                        border-width: 1pt;
+                        height: 14.4pt;
+                        width: 23.35pt;
+                      "
+                    >
+                      <p>4</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 14.4pt;
+                        width: 246.25pt;
+                      "
+                    >
+                      <p>Массаж</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 14.4pt;
+                        width: 224.9pt;
+                      "
+                    >
+                      <p>10 сеансов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        border-color: black;
+                        border-style: solid;
+                        border-top: none;
+                        border-width: 1pt;
+                        height: 13.95pt;
+                        width: 23.35pt;
+                      "
+                    >
+                      <p>5</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 13.95pt;
+                        width: 246.25pt;
+                      "
+                    >
+                      <p>УЗД сердца</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 13.95pt;
+                        width: 224.9pt;
+                      "
+                    >
+                      <p>По показаниям</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        border-color: black;
+                        border-style: solid;
+                        border-top: none;
+                        border-width: 1pt;
+                        height: 12.7pt;
+                        width: 23.35pt;
+                      "
+                    >
+                      <p>6</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 12.7pt;
+                        width: 246.25pt;
+                      "
+                    >
+                      <p>Консультация физиотерапевта</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 12.7pt;
+                        width: 224.9pt;
+                      "
+                    >
+                      <p>По показаниям</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        border-color: black;
+                        border-style: solid;
+                        border-top: none;
+                        border-width: 1pt;
+                        height: 14.35pt;
+                        width: 23.35pt;
+                      "
+                    >
+                      <p>7</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 14.35pt;
+                        width: 246.25pt;
+                      "
+                    >
+                      <p>Физиопроцедуры</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 14.35pt;
+                        width: 224.9pt;
+                      "
+                    >
+                      <p>5 сеансов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        border-color: black;
+                        border-style: solid;
+                        border-top: none;
+                        border-width: 1pt;
+                        height: 20.2pt;
+                        width: 23.35pt;
+                      "
+                    >
+                      <p>8</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 20.2pt;
+                        width: 246.25pt;
+                      "
+                    >
+                      <p>ОАК, ОАМ, кал на я/г</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 20.2pt;
+                        width: 224.9pt;
+                      "
+                    >
+                      <p>1 раз</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        border-color: black;
+                        border-style: solid;
+                        border-top: none;
+                        border-width: 1pt;
+                        height: 13.45pt;
+                        width: 23.35pt;
+                      "
+                    >
+                      <p>9</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 13.45pt;
+                        width: 246.25pt;
+                      "
+                    >
+                      <p>Сдача кала на дизбактериоз</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 13.45pt;
+                        width: 224.9pt;
+                      "
+                    >
+                      <p>1 раз</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        border-color: black;
+                        border-style: solid;
+                        border-top: none;
+                        border-width: 1pt;
+                        height: 13.65pt;
+                        width: 23.35pt;
+                      "
+                    >
+                      <p>10</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 13.65pt;
+                        width: 246.25pt;
+                      "
+                    >
+                      <p>Биохимический анализ крови</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 13.65pt;
+                        width: 224.9pt;
+                      "
+                    >
+                      <p>По показаниям</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        border-color: black;
+                        border-style: solid;
+                        border-top: none;
+                        border-width: 1pt;
+                        height: 28.3pt;
+                        width: 23.35pt;
+                      "
+                    >
+                      <p>11</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 28.3pt;
+                        width: 246.25pt;
+                      "
+                    >
+                      <p>Вакцинация</p>
+                    </td>
+                    <td
+                      style="
+                        border-bottom: solid windowtext 1pt;
+                        border-left: none;
+                        border-right: solid windowtext 1pt;
+                        border-top: none;
+                        height: 28.3pt;
+                        width: 224.9pt;
+                      "
+                    >
+                      <p>
+                        В соответствии с действующим календарем прививок,
+                        утвержденных уполномоченным государственным органом.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="layout-container">
+            <div class="footer-col">
+              <a href="../index.html" class="footer-logo">
+                <img src="../img/logo_white.png" alt="logo" />
+              </a>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-heading">Bro-clinic</h5>
+              <a href="../about.html" class="footer-link">
+                <p class="footer-text">О медцентре</p>
+              </a>
+              <a href="../team.html" class="footer-link">
+                <p class="footer-text">Наша команда</p>
+              </a>
+              <a href="../directions.html" class="footer-link">
+                <p class="footer-text">Направления</p>
+              </a>
+              <a href="../programs.html" class="footer-link">
+                <p class="footer-text">Программы для женщин и детей</p>
+              </a>
+              <a href="../check-up.html" class="footer-link">
+                <p class="footer-text">Check-up программы</p>
+              </a>
+            </div>
+            <div class="footer-col">
+              <a href="../news.html" class="footer-link">
+                <p class="footer-text">Новости</p>
+              </a>
+              <a href="../prices.html" class="footer-link">
+                <p class="footer-text">Прейскурант</p>
+              </a>
+              <a href="../contacts.html" class="footer-link">
+                <p class="footer-text">Контакты</p>
+              </a>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-heading">
+                <img src="../img/icons/phone-teal.svg" alt="icon" />
+                Телефон:
+              </h5>
+              <a href="tel:+77777777777" class="footer-link"
+                ><p class="footer-text">+7-777-777-77-77</p></a
+              >
+              <a href="tel:+77777777777" class="footer-link"
+                ><p class="footer-text">+7-777-777-77-77</p></a
+              >
+              <a href="tel:+77777777777" class="footer-link"
+                ><p class="footer-text">+7-777-777-77-77</p></a
+              >
+            </div>
+
+            <div class="footer-col">
+              <h5 class="footer-heading">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  style="
+                    width: 24px;
+                    height: 24px;
+                    fill: #56cbd6;
+                    margin-right: 6px;
+                  "
+                >
+                  <path
+                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                  />
+                </svg>
+                WhatsApp:
+              </h5>
+              <a href="https://wa.me/77777777777" class="footer-link">
+                <p class="footer-text">+7-777-777-77-77</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bot">
+          <div class="layout-container">
+            <p class="footer-text footer-copyright">
+              Все права защищены @ Bro-clinic 2023
+            </p>
+            <div class="footer-spacer"></div>
+            <div class="footer-stores">
+              <p class="footer-text">Мобильное приложение:</p>
+              <a
+                href="https://apps.apple.com/ru/app/%D0%BA%D0%B5%D1%80%D1%83%D0%B5%D0%BD-medicus/id1380159640"
+                class="footer-store"
+              >
+                <img src="../img/icons/appstore.svg" alt="store" />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=kz.mars.studio.keruen"
+                class="footer-store"
+              >
+                <img src="../img/icons/playmarket.svg" alt="store" />
+              </a>
+            </div>
+            <div class="footer-socials">
+              <a
+                href="https://www.facebook.com/"
+                class="footer-social"
+                target="_blank"
+              >
+                <img src="../img/icons/fb-circle.svg" alt="social" />
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                class="footer-social"
+                target="_blank"
+              >
+                <img src="../img/icons/insta-circle.svg" alt="social" />
+              </a>
+              <a href="malysh.html#" class="footer-social">
+                <img src="../img/icons/wp-circle.svg" alt="social" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="../js/library/jquery3.js"></script>
+    <script src="../js/review.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
